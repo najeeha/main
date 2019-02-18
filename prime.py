@@ -1,8 +1,10 @@
-a=int(input())
-for i in range(2,a):
-	if (a%i==0):
-		print(a," is not a prime number")
-		break
-	else:
-		print(a," is prime number")
-		break
+x = int(input())
+y = int(input())
+
+for num in range(x,y+1):
+   if num > 1:
+       for i in range(2,num):
+           if (num % i) == 0:
+               break
+       else:
+           print(num)
